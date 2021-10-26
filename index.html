@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="\assests\css\style.css">
+  <title>Movie Info</title>
+  <style>
+    h1 {
+      text-align: center
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="background-color:black; color: whitesmoke;">Movie Info Site</h1>
+  <div id="toShowWarning">
+    <p id="warn" style="color:red; text-align: center;"><u><b>For Better Use, Switch To Desktop Mode</b></u></p>
+  </div>
+  <div id="tags"></div>
+  <!-- <select id="tags"></select> -->
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <!-- Overlay content -->
+    <div class="overlay-content" id="overlay-content"></div>
+
+    <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8676;</a>
+
+    <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8677;</a>
+
+  </div>
+
+  <header>
+    <form id="form">
+      <input type="text" placeholder="Search" id="search" class="search">
+    </form>
+  </header>
+  <main id="main"></main>
+  <div class="pagination">
+    <div class="page" id="prev">Previous Page</div>
+    <div class="current" id="current">1</div>
+    <div class="page" id="next">Next Page</div>
+  </div>
+
+  <script src="assests\js\app.js"></script>
+</body>
+
+</html>
